@@ -502,5 +502,108 @@ h3{
     content: "\2212";
 }
 
+.feedback__form{
+    flex-direction: column;
+    width: 350px;
+}
+.form__name, .form__phone{
+    padding: 16px 20px;
+    background: inherit;
+    border: 3px solid #1F4068;
+    margin-bottom: 20px;
+}
+.form__name::placeholder, .form__phone::placeholder{
+    font-family: 'TrebuchetMS', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 135%;
+    color: #1B1B2F;
+    opacity: 0.2;
+}
+.form__file{
+    background: inherit;
+}
+.btn-form{
+    width: 100%;
+    background: #E43F5A;
+    font-family: 'TrebuchetMS', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 135%;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.upload-file__input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 0.4px;
+    height: 0.4px;
+}
+
+.upload-file__label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+}
+.upload-file__label:before{
+    content: '+';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s;
+}
+.upload-file__label:after{
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background: #1B1B2F;
+    border-radius: 50%;
+    z-index: 1;
+    transition: .8s;
+}
+.upload-file__text{
+    font-family: 'TrebuchetMS', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 135%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1B1B2F;
+}
+.upload-file__label:hover .upload-file__text {
+    color: #E43F5A;
+}
+.upload-file__label:hover::after {
+    background: #E43F5A;
+}
+
 
 
