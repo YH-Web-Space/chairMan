@@ -4,7 +4,15 @@
     <list default="true" id="c0ccf06d-d771-483c-b44b-bbd5f7da950b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/material/leatherette.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/material/leatherette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/material/matting.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/material/matting.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/material/velours.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/material/velours.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/material/velveteen.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/material/velveteen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thank-you.html" beforeDir="false" afterPath="$PROJECT_DIR$/thank-you.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,40 +30,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>active</find>
-      <find>header</find>
-      <find>bene</find>
-      <find>menu</find>
-      <find>panel</find>
-      <find>closed-pop-up</find>
-      <find>td</find>
-      <find>galle</find>
-      <find>footer</find>
-      <find>container__form</find>
-      <find>container</find>
-      <find>offer</find>
-      <find>arrow</find>
-      <find>gallery</find>
-      <find>slid</find>
-      <find>arrowS</find>
-      <find>Покраска</find>
-      <find>active-mob</find>
-      <find>characteristic_</find>
-      <find>header-top__bur</find>
-      <find>header-conte</find>
-      <find>benefits__item</find>
-      <find>red</find>
-      <find>anim</find>
-      <find>about</find>
-      <find>about__tit</find>
-      <find>tra</find>
-      <find>btn</find>
-      <find>url</find>
-      <find>slide</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -68,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tomboat/index.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -96,7 +70,9 @@
       <workItem from="1596569966306" duration="57000" />
       <workItem from="1596615107450" duration="17041000" />
       <workItem from="1596639986641" duration="4489000" />
-      <workItem from="1596724896090" duration="4749000" />
+      <workItem from="1596724896090" duration="4936000" />
+      <workItem from="1596784002252" duration="26128000" />
+      <workItem from="1597043415011" duration="27769000" />
     </task>
     <servers />
   </component>
@@ -104,9 +80,17 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597062916045">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597062916045" />
     <state x="517" y="287" key="NewPhpFileDialog" timestamp="1596728345333">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596728345333" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597053122247">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597053122247" />
   </component>
 </project>

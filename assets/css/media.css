@@ -1,0 +1,267 @@
+@media (max-width: 1200px) {
+    .title__line{
+        width: 100px;
+    }
+    .description{
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .description{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .about__text{
+        margin-right: 0;
+    }
+    .description__benefits{
+        flex-direction: column-reverse;
+    }
+    .benefits__img{
+        margin-bottom: 50px;
+    }
+    .benefits__item{
+        margin-bottom: 50px;
+    }
+    .benefits__item:nth-child(odd){
+        padding-right: 10px;
+    }
+    .benefits__item-title, .benefits__item-text{
+        margin-left: 70px;
+    }
+    .swap{
+        margin-bottom: 20px;
+    }
+    .materials__block{
+        flex-wrap: wrap;
+    }
+    .materials__type{
+        flex-basis: 50%;
+    }
+    .materials__type:nth-child(1), .materials__type:nth-child(2){
+        margin-bottom: 80px;
+    }
+    .feedback__form-block{
+        margin-bottom: 50px;
+    }
+    .contacts__info{
+        margin-bottom: 50px;
+    }
+    .swap{
+        width: 333px;
+        height: 250px;
+    }
+    .img-comp-img img{
+        width: 333px;
+        height: 250px;
+    }
+    .img-comp-slider {
+        height: 250px;
+        width: 25px;
+    }
+    .faq__list{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .header-top{
+        padding-top: 20px;
+    }
+    .header-top__logo{
+        /*margin-right: 90px;*/
+    }
+    .header-top__button{
+        margin-right: 50px;
+        border: 3px #e53d5a solid;
+    }
+    .header-content{
+        background: url("../img/header/sofa-header.png") no-repeat;
+        background-position: top right -250px;
+        background-size: 100%;
+    }
+    .contacts__info{
+        align-items: center;
+        width: 300px;
+    }
+    .contacts__info span{
+        text-align: center;
+    }
+    .contacts__address{
+        text-align: center;
+    }
+    .contacts__phone{
+        text-align: center;
+    }
+    .header-content__instagram img{
+        width: 100%;
+    }
+    .description__contacts {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .contacts__map{
+        width: 100%;
+        height: 320px;
+    }
+    .thanks-logo{
+        margin-bottom: 50px;
+    }
+    .thanks-title{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .thanks-text{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .btn-thanks{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .container{
+        padding: 0 15px;
+    }
+    .header-content{
+        background: none;
+    }
+    .title__text{
+        font-size: 30px;
+    }
+    .header{
+        background: none;
+    }
+    .header-top__button span{
+        display: none;
+    }
+    .header-top__button img{
+        margin: 0;
+    }
+    .header-top__button{
+        padding: 10px;
+    }
+    .header-top__burger-menu{
+        /*background: #E43F5A;*/
+    }
+    .header-top__burger span{
+        background-color: #E43F5A;
+    }
+    .header-top__burger:before{
+        background-color: #E43F5A;
+    }
+    .header-top__burger:after{
+        background-color: #E43F5A;
+    }
+    .header-menu__list{
+        margin: 40px 50px 0 0;
+    }
+    .header-menu__link{
+        font-size: 40px;
+    }
+    .header-content__instagram{
+        display: none;
+    }
+    .title__line{
+        width: 30px;
+    }
+    .benefits__list{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .benefits__item{
+        width: 100%;
+        /*padding: 0!important;*/
+    }
+    .upload-file__label:before{
+        right: 40%;
+    }
+    .upload-file__label:after{
+        right: 40%;
+    }
+    .footer-nav__item{
+        margin-bottom: 10px;
+    }
+    .footer-nav__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 425px) {
+    .header-menu__link{
+        font-size: 30px;
+    }
+    .header-content__mobile-instagram{
+        display: inline;
+        margin-left: 80px;
+    }
+    .header-content__title{
+        font-size: 48px;
+    }
+    .header-content{
+        background: url("../img/header/sofa-header.png") no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+    .materials__block{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .materials__type{
+        width: 100%;
+    }
+    .materials__text{
+        width: 100%;
+    }
+    .feedback__img{
+        display: none;
+    }
+    .faq__question{
+        font-size: 14px;
+    }
+    .thanks{
+        margin-top: 20px;
+    }
+    .thanks-logo{
+        margin-bottom: 50px;
+    }
+    .thanks-title{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .thanks-text{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .btn-thanks{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 425px) {
+    .header-top__button{
+        margin-right: 20px;
+    }
+    .header-top{
+        margin-bottom: 50px;
+    }
+    .feedback__form{
+        width: 300px;
+    }
+    .header-content{
+        padding-bottom: 0;
+    }
+    .faq__answer{
+        padding: 0;
+    }
+}
+@media (max-width: 375px) {
+    .faq__question{
+        padding: 15px;
+    }
+}

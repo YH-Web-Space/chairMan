@@ -126,3 +126,67 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+// Менять цвет SVG картинки
+$('img.img-svg').each(function(){
+    var $img = $(this);
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+    $.get(imgURL, function(data) {
+        var $svg = $(data).find('svg');
+        if(typeof imgClass !== 'undefined') {
+            $svg = $svg.attr('class', imgClass+' replaced-svg');
+        }
+        $svg = $svg.removeAttr('xmlns:a');
+        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+        }
+        $img.replaceWith($svg);
+    }, 'xml');
+});
+
+let burgerSpan = document.querySelector('.header-top__burger');
+let headerMenu = document.querySelector('.header-menu');
+function showMenu(){
+    headerMenu.classList.toggle('show-menu');
+    burgerSpan.classList.toggle('burger-active-after');
+    burgerSpan.classList.toggle('burger-active-before');
+    burgerSpan.classList.toggle('burger-active-span');
+}
+// console.log(burgerSpan);
+
+burgerSpan.addEventListener("click", showMenu);
+
+// обработка формы
+$(function() {
+    document.getElementById('ajax-contact-form').addEventListener('submit', function(evt){
+        var http = new XMLHttpRequest(), f = this;
+        var th = $(this);
+        evt.preventDefault();
+        http.open("POST", "contact.php", true);
+        http.onreadystatechange = function() {
+            if (http.readyState == 4 && http.status == 200) {
+                location = http.responseURL;
+                console.log(location);
+                // alert(http.responseURL);
+                if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
+                    th.trigger("reset");
+                }
+            }
+        }
+        http.onerror = function() {
+            alert('Ошибка, попробуйте еще раз');
+        }
+        http.send(new FormData(f));
+    }, false);
+});
+
+// якорное меню
+function anchorMenu(event){
+    event.preventDefault();
+    let id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000);
+};
+$("#menu").on("click","a", anchorMenu);
+$("#footer-menu").on("click","a", anchorMenu);
+$('.header-content__button').on("click", anchorMenu);

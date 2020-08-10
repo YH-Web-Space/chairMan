@@ -1,26 +1,84 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns:og="http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <title>Tomboat</title>
+    <title>Chairman</title>
+    <!-- BOOTSTRAP-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
     <!-- CSS style -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/media.css">
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!--Open Graph-->
+    <link rel="shortcut icon" href="assets/img/Logo2.ico" type="image/x-icon">
+    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU">
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article">
+    <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+    <meta property="og:title" content="Chairman Перетяжка и ремонт">
+    <!-- описание страницы -->
+    <meta property="og:description" content="Перетяжка мягкой мебели г.Киев. Реставрация и ремонт. Работаем без
+    предоплаты. Бесплатная консультация">
+    <!-- ссылка на изображение, которое будет публиковаться в записи -->
+    <meta property="og:image" content="assets/img/og-logo.jpg">
+    <!-- ссылка на текущую страницу -->
+    <meta property="og:url" content="http://chairman.com.ua/">
+    <!-- название сайта -->
+    <meta property="og:site_name" content="Chairman">
+
+    <!-- Тип карты, по умолчанию используется summary -->
+    <meta name="twitter:card" content="summary">
+    <!-- Имя/логин автора -->
+    <meta name="twitter:site" content="Chairman">
+    <!-- Название страницы -->
+    <meta name="twitter:title" content="Chairman Перетяжка и ремонт">
+    <!-- Описание страницы -->
+    <meta name="twitter:description" content="Перетяжка мягкой мебели г.Киев. Реставрация и ремонт. Работаем без
+    предоплаты. Бесплатная консультация">
+    <!-- Cсылка на изображение -->
+    <meta name="twitter:image" content="assets/img/og-logo.jpg">
 </head>
 <body>
 <header class="header">
+    <div class="header-menu">
+        <div class="container">
+            <ul class="header-menu__list" id="menu">
+                <li class="header-menu__item">
+                    <a href="#about" class="header-menu__link  ">О нас</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#benefits" class="header-menu__link  ">Преимущества</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#portfolio" class="header-menu__link ">Портфолио</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#materials" class="header-menu__link ">Материалы</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#feedback" class="header-menu__link ">Обратная связь</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#faq" class="header-menu__link ">FAQ</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#contacts" class="header-menu__link ">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="header-top df">
             <div class="header-top__logo">
                 <img class="header-top__logo-img" src="assets/img/header/logo.png" alt="logo">
             </div>
             <div class="header-top__navigation df">
-                <a class="btn header-top__button df" href="">
+                <a class="btn header-top__button df" href="tel:+38(093)-207-15-16">
                     <img class="header-top__phone-img" src="assets/img/header/phone.svg" alt="phone">
-                    Позвонить мне
+                    <span>Позвонить мне</span>
                 </a>
                 <div class="header-top__burger-menu">
                     <div class="header-top__burger">
@@ -30,16 +88,26 @@
             </div>
         </div>
 
-        <div class="header-content">
+        <div class="header-content df">
             <div class="header-content__info df">
                 <h1 class="header-content__title anim-items">Перетяжка <br> мебели<span class="red">.</span>
                 </h1>
-                <p class="header-content__slogan anim-items anim-no-hide">Выезд мастера для <br> оценки стоимости <br>
-                    реставрации
-                    <span class="header-content__slogan_red">бесплатен</span></p>
-                <a class="btn header-content__button df" href="">
+                <p class="header-content__slogan anim-items anim-no-hide">Консультация мастера <br> и оценка стоимости <br>
+                    реставрации <br>
+                    <span class="header-content__slogan_red">бесплатная</span>
+                    <a class="header-content__mobile-instagram"
+                       href="https://instagram.com/chairmankiev?igshid=1elcoi5ja4bc" target="_blank">
+                        <img src="assets/img/header/mobile-instagram.svg" alt="instagram-logo">
+                    </a>
+                </p>
+                <a class="btn header-content__button df" href="#feedback">
                     <img class="header-content__phone-img" src="assets/img/header/build.svg" alt="phone">
-                    Позвонить мне
+                    Вызвать мастера
+                </a>
+            </div>
+            <div class="header-content__instagram df">
+                <a href="https://instagram.com/chairmankiev?igshid=1elcoi5ja4bc" target="_blank">
+                    <img src="assets/img/header/instagram.png" alt="instagram">
                 </a>
             </div>
         </div>
@@ -50,7 +118,7 @@
     <div class="container">
         <div class="title df">
             <hr class="title__line">
-            <h2 class="about__title-text anim-items anim-title">О нас</h2>
+            <h2 class="title__text anim-items anim-title">О нас</h2>
         </div>
         <div class="description df">
             <div class="description__text">
@@ -94,66 +162,70 @@
     <div class="container">
         <div class="title df">
             <hr class="title__line">
-            <h2 class="benefits__title-text anim-items anim-title">Преимущества</h2>
+            <h2 class="title__text anim-items anim-title">Преимущества</h2>
         </div>
         <div class="description df">
-            <div class="benefits__img df">
-                <img src="assets/img/benefits/benefits_img.png" alt="about-img">
+            <div class="description__benefits df">
+                <div class="benefits__img df">
+                    <img src="assets/img/benefits/benefits_img.png" alt="about-img">
+                </div>
+                <div class="benefits__list df">
+                    <div class="benefits__item df">
+                        <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/speed.svg"
+                             alt="time">
+                        <p class="benefits__item-title anim-items anim__item-title">
+                            <span class="red">1.</span> Оперативность
+                        </p>
+                        <p class="benefits__item-text anim-items anim-text anim-no-hide">Выполняем любой проект до 14
+                            дней</p>
+                    </div>
+                    <div class="benefits__item df">
+                        <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/price.svg"
+                             alt="time">
+                        <p class="benefits__item-title anim-items anim__item-title">
+                            <span class="red">2.</span> Цена
+                        </p>
+                        <p class="benefits__item-text anim-items anim-text anim-no-hide">Самые низкие цены на рынке</p>
+                    </div>
+                    <div class="benefits__item df">
+                        <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/time.svg"
+                             alt="time">
+                        <p class="benefits__item-title anim-items anim__item-title">
+                            <span class="red">3.</span> Материалы
+                        </p>
+                        <p class="benefits__item-text anim-items anim-text anim-no-hide">Срок службы материалов от 5
+                            лет</p>
+                    </div>
+                    <div class="benefits__item df">
+                        <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/check.svg"
+                             alt="time">
+                        <p class="benefits__item-title anim-items anim__item-title">
+                            <span class="red">4.</span> Гарантия
+                        </p>
+                        <p class="benefits__item-text anim-items anim-text anim-no-hide">Гарантия на все работы 12
+                            месяцев</p>
+                    </div>
+                    <div class="benefits__item df">
+                        <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/security.svg"
+                             alt="time">
+                        <p class="benefits__item-title anim-items anim__item-title">
+                            <span class="red">5.</span> Без предоплаты
+                        </p>
+                        <p class="benefits__item-text anim-items anim-text anim-no-hide">Оплата по факту
+                            выполненной работы</p>
+                    </div>
+                    <div class="benefits__item df">
+                        <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/date.svg"
+                             alt="time">
+                        <p class="benefits__item-title anim-items anim__item-title">
+                            <span class="red">6.</span> Опыт
+                        </p>
+                        <p class="benefits__item-text anim-items anim-text anim-no-hide">Было сделано больше 300
+                            реставраций</p>
+                    </div>
+                </div>
             </div>
-            <div class="benefits__list df">
-                <div class="benefits__item df">
-                    <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/speed.svg"
-                         alt="time">
-                    <p class="benefits__item-title anim-items anim__item-title">
-                        <span class="red">1.</span> Оперативность
-                    </p>
-                    <p class="benefits__item-text anim-items anim-text anim-no-hide">Выполняем любой проект до 14
-                        дней</p>
-                </div>
-                <div class="benefits__item df">
-                    <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/price.svg"
-                         alt="time">
-                    <p class="benefits__item-title anim-items anim__item-title">
-                        <span class="red">2.</span> Цена
-                    </p>
-                    <p class="benefits__item-text anim-items anim-text anim-no-hide">Самые низкие цены на рынке</p>
-                </div>
-                <div class="benefits__item df">
-                    <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/time.svg"
-                         alt="time">
-                    <p class="benefits__item-title anim-items anim__item-title">
-                        <span class="red">3.</span> Материалы
-                    </p>
-                    <p class="benefits__item-text anim-items anim-text anim-no-hide">Срок службы материалов от 5 лет</p>
-                </div>
-                <div class="benefits__item df">
-                    <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/check.svg"
-                         alt="time">
-                    <p class="benefits__item-title anim-items anim__item-title">
-                        <span class="red">4.</span> Гарантия
-                    </p>
-                    <p class="benefits__item-text anim-items anim-text anim-no-hide">Гарантия на все работы 12
-                        месяцев</p>
-                </div>
-                <div class="benefits__item df">
-                    <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/security.svg"
-                         alt="time">
-                    <p class="benefits__item-title anim-items anim__item-title">
-                        <span class="red">5.</span> Без предоплаты
-                    </p>
-                    <p class="benefits__item-text anim-items anim-text anim-no-hide">Гарантия на все работы 12
-                        месяцев</p>
-                </div>
-                <div class="benefits__item df">
-                    <img class="benefits__item-img anim-items anim-no-hide" src="assets/img/benefits/date.svg"
-                         alt="time">
-                    <p class="benefits__item-title anim-items anim__item-title">
-                        <span class="red">6.</span> Опыт
-                    </p>
-                    <p class="benefits__item-text anim-items anim-text anim-no-hide">Было сделано больше 300
-                        реставраций</p>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -162,7 +234,7 @@
     <div class="container">
         <div class="title df">
             <hr class="title__line">
-            <h2 class="about__title-text anim-items anim-title">Портфолио</h2>
+            <h2 class="title__text anim-items anim-title">Портфолио</h2>
         </div>
         <div class="description df">
             <div class="swap">
@@ -175,7 +247,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio__social-network">
+            <div class="portfolio__social-network df">
                 <div class="portfolio__text">
                     <p>Вы можете посмотреть<br> портфолио <span class="red">двумя</span><br> способами:</p>
                 </div>
@@ -184,7 +256,8 @@
                         <img src="assets/img/portfolio/arr1.png" alt="">
                     </div>
                     <div class="portfolio__link">
-                        <a class="btn btn-social-inst df" href="">
+                        <a class="btn btn-social-inst df" href="https://instagram.com/chairmankiev?igshid=1elcoi5ja4bc"
+                           target="_blank">
                             Посмотреть в Instagram
                         </a>
                         <a class="btn btn-social-telega df" href="">
@@ -197,11 +270,11 @@
     </div>
 </section>
 
-<section class="materials">
+<section class="materials" id="materials">
     <div class="container">
         <div class="title df">
             <hr class="title__line">
-            <h2 class="about__title-text anim-items anim-title">Материалы</h2>
+            <h2 class="title__text anim-items anim-title">Материалы</h2>
         </div>
         <div class="description df">
             <div class="materials__block df">
@@ -242,43 +315,45 @@
     </div>
 </section>
 
-<section class="feedback">
+<section class="feedback" id="feedback">
     <div class="container">
         <div class="title df">
             <hr class="title__line">
-            <h2 class="about__title-text anim-items anim-title">Связь с CHAIR<span class="red">MAN</span></h2>
+            <h2 class="title__text anim-items anim-title">Связь с CHAIR<span class="red">MAN</span></h2>
         </div>
         <div class="description df">
-            <div class="feedback__form-block">
-                <form action="telegram.php" method="post" class="feedback__form df">
-                    <input class="form__name" type="text" id="" name="user_name" placeholder="Ваше имя">
-                    <input class="form__phone" type="text" id="" name="user_phone" placeholder="Ваш телефон">
+            <div class="feedback__form-block df">
+                <form id="ajax-contact-form" enctype="multipart/form-data" method="post">
+                    <input id="nameFF" name="nameFF" type="text" placeholder="Ваше имя" minlength="2" maxlength="10" required>
 
-<!--                    <div class="upload-file__wrapper">-->
-<!--                        <input type="file" name="user_files" id="upload-file__input" class="upload-file__input" multiple  accept="image/jpeg,image/png,image/gif">-->
-<!--                        <label class="upload-file__label" for="upload-file__input">-->
-<!--&lt;!&ndash;                            <svg class="upload-file__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <path d="M286 384h-80c-14.2 1-23-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c11.6 11.6 3.7 33.1-13.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-23-23V366c0-13.3 10.7-24 24-24h136v8c0 31 24.3 56 56 56h80c30.9 0 55-26.1 57-55v-8h135c13.3 0 24 10.6 24 24zm-124 88c0-11-9-20-19-20s-19 9-20 20 9 19 20 20 21-9 20-20zm64 0c0-12-9-20-20-20s-20 9-19 20 9 20 20 20 21-9 20-20z">&ndash;&gt;-->
-<!--&lt;!&ndash;                                </path>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </svg>&ndash;&gt;-->
-<!--                            <span class="upload-file__text">Прикрепить файл</span>-->
-<!--                        </label>-->
-<!--                    </div>-->
+                    <input id="telFF" name="telFF" type="tel" placeholder="Ваш телефон" pattern="[+][^[ 0-9]+$]" minlength="10" maxlength="13" required>
 
-                    <button class="btn btn-form df" type="submit">Отправить форму</button>
+                    <div class="upload-file__wrapper">
+                        <input id="fileFF" name="fileFF" type="file" class="upload-file__input" multiple
+                               accept="image/jpeg,image/png,image/gif">
+                        <label class="upload-file__label" for="fileFF">
+                            <span class="upload-file__text">Прикрепить файл</span>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-form df" type="submit" id="submitFF">Отправить форму</button>
                 </form>
+            </div>
+
+            <div class="feedback__img df">
+                <img src="assets/img/faq/faq-img.png" alt="faq-chairman">
             </div>
         </div>
     </div>
 </section>
 
-<section class="FAQ">
+<section class="faq" id="faq">
     <div class="container">
         <div class="title df">
             <hr class="title__line">
-            <h2 class="about__title-text anim-items anim-title">F.A.Q.</h2>
+            <h2 class="title__text anim-items anim-title">F.A.Q.</h2>
         </div>
-        <div class="description df">
+        <div class="description description-faq df">
             <div class="faq__list df">
                 <button class="faq__question"><span class="red">1.</span> Сколько стоит выезд мастера ?</button>
                 <div class="faq__answer">
@@ -288,19 +363,21 @@
 
                 <button class="faq__question"><span class="red">2.</span> Ести ли гарантия ?</button>
                 <div class="faq__answer">
-                    <p>Мы предоставляем гарантию 12 месяцев на перетяжку любой сложности, если вам устанавливают б\у
-                        механизмы на них гарантия до 6 месяцев и бесплатная замена 12 месяцев в случае любой поломки</p>
+                    <p>Мы предоставляем гарантию 12 месяцев на перетяжку любой сложности, На замену механизмов гарантия
+                        до 6 месяцев
+                    </p>
                 </div>
 
-                <button class="faq__question"><span class="red">3.</span> Берете ли вы предоплату?  </button>
+                <button class="faq__question"><span class="red">3.</span> Берете ли вы предоплату?</button>
                 <div class="faq__answer">
                     <p>Мы работаем абсолютно без предоплаты, мы отвечаем за качество проделанной работы лично. Только
-                        после того как вы ознакомились с готовый работой, посмотрели что вам все нравится, вы оплачиваете
+                        после того как вы ознакомились с готовой работой, посмотрели что вам все нравится, вы
+                        оплачиваете
                         всю стоимость.
                     </p>
                 </div>
 
-                <button class="faq__question"><span class="red">4.</span> Сколько времени нужно на работу? </button>
+                <button class="faq__question"><span class="red">4.</span> Сколько времени нужно на работу?</button>
                 <div class="faq__answer">
                     <p>Срок работы как правило до 14 дней, если нужно сделать мелкую замену механизмов, либо перетяжку
                         стульчика, без пошива, это все делается в огворенный день за 1-2 часа.</p>
@@ -309,13 +386,14 @@
                 <button class="faq__question"><span class="red">5.</span> Можно ли перетянуть на дому ?</button>
                 <div class="faq__answer">
                     <p>Да, мы предоставляем услугу перетяжки на дому.Мы очень уступчивы в данном вопросе и постараемся
-                        сделать все для вашего комфорта В случаях если требуется тяжелое обородувание и очень сложный пошив,
+                        сделать все для вашего комфорта В случаях если требуется тяжелое обородувание и очень сложный
+                        пошив,
                         такие работы выполняются только у нас в цеху. Вы должны обеспечить мастера местом для работы и
                         понимать что может быть немного грязно по окончанию работы.
                     </p>
                 </div>
 
-                <button class="faq__question"><span class="red">6.</span>  Почему же выбрать нас?</button>
+                <button class="faq__question"><span class="red">6.</span> Почему же выбрать нас?</button>
                 <div class="faq__answer">
                     <p>Тут же очевидно) Мы очень лояльны к каждому клиенту. Бесплатно проконсультируем по всем вопросам,
                         поможем с выбором тканей и материалов Если нужно приедем и все сделаем у вас на дому В случаях
@@ -324,16 +402,19 @@
                         по ремонту стула или кресла)</p>
                 </div>
 
-                <button class="faq__question"><span class="red">7.</span> Стоит ли перетягивать?  </button>
+                <button class="faq__question"><span class="red">7.</span> Стоит ли перетягивать?</button>
                 <div class="faq__answer">
-                    <p>Тут вопрос спецефический и однозначного ответа на него нет)  Сейчас разберем почему же. Есть модели
+                    <p>Тут вопрос спецефический и однозначного ответа на него нет) Сейчас разберем почему же. Есть
+                        модели
                         у которых уже не работают механизмы, просел поролон, облезла оббивка) Если что-то одно из
-                        эттого-однозначно да, это дешевле чем покупать новое. Когда это все в комплексе, мы проводим оценку,
+                        эттого-однозначно да, это дешевле чем покупать новое. Когда это все в комплексе, мы проводим
+                        оценку,
                         составляем смету, и часто бывает так, что стоимость ремонта не намного дешевле покупки нового.
                         Мы говорим об этом честно, не требует с клиента лишних денег, а помогаем разобраться) </p>
                 </div>
 
-                <button class="faq__question"><span class="red">8.</span> Работаем ли мы с материалом заказчика?</button>
+                <button class="faq__question"><span class="red">8.</span> Работаем ли мы с материалом заказчика?
+                </button>
                 <div class="faq__answer">
                     <p>Да, мы перетягиваем вашим материалом, главное уточните подойдет ли ваш материал для конкретного
                         вида работ. Оговаривайте заранее ширину рулона и метраж. Если материал с рисунком, то учитывайте
@@ -343,6 +424,91 @@
         </div>
     </div>
 </section>
+
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="title df">
+            <hr class="title__line">
+            <h2 class="title__text anim-items anim-title">Контакты</h2>
+        </div>
+        <div class="description df">
+            <div class="description__contacts df">
+                <div class="contacts__info df">
+                    <div class="contacts__address">
+                        <p class="contacts__title">Адрес:</p>
+                        <p class="contacts__text">Украина.Киев. Проспект Валерия Лобановского 10 (Район Севастопольской
+                            площади)</p>
+                    </div>
+
+                    <span class="red span-contacts">Перед тем как ехать к нам наберите предварительно!</span>
+
+                    <div class="contacts__phone">
+                        <p class="contacts__title">Телефон:</p>
+                        <p class="contacts__text"><a class="contacts__text" href="tel:+38(093)-207-15-16">+38(093)-207-15-16</a>
+                        </p>
+                    </div>
+                    <div class="social-network df">
+                        <a class="telegram-link" href="https://t.me/DmitriyBandurka" target="_blank">
+                            <img class="img-svg telegram" src="assets/img/contacts/telegram.svg" alt="">
+                        </a>
+                        <a class="viber-link" href="viber://chat?number=%2B380932071516" target="_blank">
+                            <img class="img-svg viber" src="assets/img/contacts/viber.svg" alt="">
+                        </a>
+                        <a class="watsUp-link"
+                           href="https://wa.me/380932071516?text=Здравствуйте,+интересует+перетяжка!" target="_blank">
+                            <img class="img-svg watsUp" src="assets/img/contacts/whatsapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__map df">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.0611450562064!2d30.46614531526404!3d50.42133239734428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cec8517c5d51%3A0x18b9d703481f16ee!2z0L_RgNC-0YHQv9C10LrRgiDQktCw0LvQtdGA0ZbRjyDQm9C-0LHQsNC90L7QstGB0YzQutC-0LPQviwgMTAsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1596790348956!5m2!1suk!2sua"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <a href="/">
+                <img src="assets/img/footer/logo-footer.png" alt="chairMan">
+            </a>
+        </div>
+
+        <div class="footer__menu">
+            <nav class="footer-nav" id="footer-menu">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a href="#about" class="footer-nav__link">О нас</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#benefits" class="footer-nav__link">Преимущества</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#portfolio" class="footer-nav__link">Портфолио</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#materials" class="footer-nav__link">Материалы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#faq" class="footer-nav__link">FAQ</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#contacts" class="footer-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__advisory">
+            <p>© Все права защищены</p>
+        </div>
+    </div>
+</footer>
+
 
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script>
