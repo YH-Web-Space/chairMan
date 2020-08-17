@@ -201,7 +201,11 @@
         margin-left: 80px;
     }
     .header-content__title{
-        font-size: 48px;
+        margin-bottom: 80px;
+        font-size: 60px;
+    }
+    .header-content__slogan{
+        margin-bottom: 50px;
     }
     .header-content{
         background: url("../img/header/sofa-header.png") no-repeat;
@@ -242,8 +246,6 @@
     .btn-thanks{
         margin-bottom: 10px;
     }
-}
-@media (max-width: 425px) {
     .header-top__button{
         margin-right: 20px;
     }
@@ -259,9 +261,19 @@
     .faq__answer{
         padding: 0;
     }
+    .benefits__img{
+        width: 100%;
+        justify-content: center;
+    }
 }
 @media (max-width: 375px) {
     .faq__question{
         padding: 15px;
+    }
+    #ajax-contact-form{
+        width: 100%;
+    }
+    .feedback__form-block{
+        width: 100%;
     }
 }

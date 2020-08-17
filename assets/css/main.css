@@ -22,7 +22,7 @@ a{
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'jopa', sans-serif
+	font-family: 'TrebuchetMS', sans-serif
 
 }
 ul, li {
@@ -126,7 +126,7 @@ h3{
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .header-top__navigation{
     align-items: center;
@@ -143,8 +143,9 @@ h3{
     letter-spacing: 0.02em;
 }
 .header-top__button {
-    margin-right: 120px;
+    margin-right: 200px;
     color: #E43F5A;
+    border: 2px solid #E43F5A;
 }
 .header-top__phone-img{
     margin-right: 10px;
@@ -236,7 +237,6 @@ h3{
 }
 .header-content__title{
     margin-top: 0;
-
     transform: translate(0, 50%);
     opacity: 0;
     transition: all 0.8s ease 0s;
@@ -323,12 +323,14 @@ h3{
 }
 .anim-text{
     transform: translate(0px, 120%);
+    -webkit-transform: translate(0px, 120%);
     transition: all .8s ease .3s;
     opacity: 0;
 }
 .anim-text._active,
 ._active .anim-text{
     transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
     opacity: 1;
 }
 .about__text{
@@ -344,21 +346,26 @@ h3{
 .description__benefits{
     align-items: center;
 }
+.description__text{
+    flex-basis: 60%;
+}
 .about__img{
-    flex-basis: 50%;
+    flex-basis: 40%;
     align-items: center;
 }
 .about__img img{
-    /*width: 100%;*/
+    width: 100%;
 }
 /*section BENEFITS*/
 .benefits__img{
-    flex-basis: 40%;
+    flex-basis: auto;
+    width: 40%;
     align-items: center;
 }
 .benefits__list{
     height: 100%;
-    flex-basis: 60%;
+    flex-basis: auto;
+    width: 60%;
     flex-wrap: wrap;
     align-content: space-between;
 }

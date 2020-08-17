@@ -1,6 +1,6 @@
 <?php
 if (isset ($_POST['telFF'])) {
-  $to = "romaishytin@gmail.com";
+  $to = "bandurkadmitriy@gmail.com";
   $from = "support@tpverstak.ru";
   $subject = "Заполнена контактная форма на сайте ".$_SERVER['HTTP_REFERER'];
   $message = "\nИмя пользователя: ".$_POST['nameFF']."\nТелефон пользователя ".$_POST['telFF']."\n\nАдрес сайта: ".$_SERVER['HTTP_REFERER'];

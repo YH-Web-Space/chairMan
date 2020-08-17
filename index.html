@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns:og="http://ogp.me/ns#">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175165421-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-175165421-1');
+    </script>
     <meta charset="UTF-8">
     <title>Chairman</title>
     <!-- BOOTSTRAP-->
@@ -40,6 +49,23 @@
     предоплаты. Бесплатная консультация">
     <!-- Cсылка на изображение -->
     <meta name="twitter:image" content="assets/img/og-logo.jpg">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '330535698022356');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=330535698022356&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
 <header class="header">
@@ -78,7 +104,7 @@
             <div class="header-top__navigation df">
                 <a class="btn header-top__button df" href="tel:+38(093)-207-15-16">
                     <img class="header-top__phone-img" src="assets/img/header/phone.svg" alt="phone">
-                    <span>Позвонить мне</span>
+                    <span>Поговорить по телефону</span>
                 </a>
                 <div class="header-top__burger-menu">
                     <div class="header-top__burger">
@@ -129,24 +155,35 @@
                 </div>
                 <div class="description__paragraph anim-items anim-text anim-no-hide">
                     <p class="about__text">
-                        Начинали мы работать в небольшом помещении в общежитии, вдвоём с колегой изучали все азы этой
-                        работы с
-                        самого нуля, покупали офисные кресла и на практике уже усовершенствовали свои навыки ремонта.
+                        Начинали мы работать в небольшом помещении в общежитии, вдвоём с коллегой изучали все азы этой
+                        работы с самого нуля, покупали офисные кресла и на практике уже усовершенствовали свои навыки ремонта.
                     </p>
                 </div>
                 <div class="description__paragraph anim-items anim-text anim-no-hide">
                     <p class="about__text">
-                        Сами шили чехлы к ним, искали поставщика. Перебирали десятки вариантов, остановились на закупке
-                        тканей
-                        на 7м километре в Одессе.
+                        Сами шили чехлы к ним, подбирали поставщиков материалов.
                     </p>
                 </div>
                 <div class="description__paragraph anim-items anim-text anim-no-hide">
                     <p class="about__text">
-                        Сейчас у нас есть свои мастера для сборки\разборки кресел, водитель для транспортировки мебели.
-                        Так же есть швеи которые работают в небольшом селе, именно из-за этого цена перетяжки у нас
-                        минимальная,
-                        при этом качество всегда остается на высоком уровне.
+                        Сейчас у нас есть свои мастера для сборки\разборки мебели,
+                        водитель для транспортировки мебели и свое швейное производство.
+                    </p>
+                </div>
+                <div class="description__paragraph anim-items anim-text anim-no-hide">
+                    <p class="about__text">
+                        Это позволяет нам качественно подходить к каждому клиенту.
+                    </p>
+                </div>
+                <div class="description__paragraph anim-items anim-text anim-no-hide">
+                    <p class="about__text">
+                        Мы не гонимся за количеством. Работаем на качество.
+                    </p>
+                </div>
+                <div class="description__paragraph anim-items anim-text anim-no-hide">
+                    <p class="about__text">
+                        Мы не напариваем ненужные услуги.
+                        Ремонтируем только то, что действительно в этом нуждается.
                     </p>
                 </div>
             </div>
@@ -260,8 +297,8 @@
                            target="_blank">
                             Посмотреть в Instagram
                         </a>
-                        <a class="btn btn-social-telega df" href="">
-                            Получить в мессенджер
+                        <a class="btn btn-social-telega df" href="viber://chat?number=%2B380932071516" target="_blank">
+                            Получить в Вайбер
                         </a>
                     </div>
                 </div>
@@ -280,7 +317,7 @@
             <div class="materials__block df">
                 <div class="materials__type df">
                     <div class="materials__text">
-                        <p>Кожзам</p>
+                        <p>Рогожка</p>
                     </div>
                     <div class="materials__img">
                         <img src="assets/img/material/matting.png" alt="">
@@ -288,7 +325,7 @@
                 </div>
                 <div class="materials__type df">
                     <div class="materials__text">
-                        <p>Рогожка</p>
+                        <p>Кожзам</p>
                     </div>
                     <div class="materials__img">
                         <img src="assets/img/material/leatherette.png" alt="">
@@ -404,13 +441,11 @@
 
                 <button class="faq__question"><span class="red">7.</span> Стоит ли перетягивать?</button>
                 <div class="faq__answer">
-                    <p>Тут вопрос спецефический и однозначного ответа на него нет) Сейчас разберем почему же. Есть
-                        модели
-                        у которых уже не работают механизмы, просел поролон, облезла оббивка) Если что-то одно из
-                        эттого-однозначно да, это дешевле чем покупать новое. Когда это все в комплексе, мы проводим
-                        оценку,
-                        составляем смету, и часто бывает так, что стоимость ремонта не намного дешевле покупки нового.
-                        Мы говорим об этом честно, не требует с клиента лишних денег, а помогаем разобраться) </p>
+                    <p>Тут вопрос специфический и однозначного ответа на него нет.
+                        В 90% процентов, ответ да, это дешевле чем покупать новое.
+                        Но есть модели у которых уже не работают механизмы, просел поролон, облезла оббивка, поломался каркас.
+                        Когда все проблемы наблюдаются у одного старенького диванчика или кресла, бывает так, что стоимость ремонта не намного дешевле покупки нового.
+                        Мы говорим об этом честно. Проводим оценку, составляем смету и помогаем принять решение, стоит ли?</p>
                 </div>
 
                 <button class="faq__question"><span class="red">8.</span> Работаем ли мы с материалом заказчика?
@@ -512,7 +547,7 @@
 
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script>
-    initComparisons();
+    // initComparisons();
 </script>
 </body>
 </html>

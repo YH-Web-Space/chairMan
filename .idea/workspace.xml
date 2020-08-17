@@ -5,13 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/material/leatherette.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/material/leatherette.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/material/matting.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/material/matting.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/material/velours.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/material/velours.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/material/velveteen.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/material/velveteen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/after.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portfolio/after.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/before.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portfolio/before.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/thank-you.html" beforeDir="false" afterPath="$PROJECT_DIR$/thank-you.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tomboat/index.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -72,7 +70,9 @@
       <workItem from="1596639986641" duration="4489000" />
       <workItem from="1596724896090" duration="4936000" />
       <workItem from="1596784002252" duration="26128000" />
-      <workItem from="1597043415011" duration="27769000" />
+      <workItem from="1597043415011" duration="28478000" />
+      <workItem from="1597130840330" duration="1441000" />
+      <workItem from="1597133750373" duration="13888000" />
     </task>
     <servers />
   </component>
@@ -80,10 +80,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597062916045">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597153170708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597062916045" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597153170708" />
     <state x="517" y="287" key="NewPhpFileDialog" timestamp="1596728345333">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
